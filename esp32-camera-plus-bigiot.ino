@@ -47,12 +47,12 @@ TFT_eSPI tft = TFT_eSPI();              // Invoke library, pins defined in User_
 BIGIOT bigiot;
 
 
-const char *ssid    =   "";             //wifi ssid
-const char *password =  "";             //wifi password
-const char *id =        "";             //platform device id
-const char *apikey =    "";             //platform device api key
+const char *ssid    =   "alpaca-old";             //wifi ssid
+const char *password =  "testingesp32";             //wifi password
+const char *id =        "16479";             //platform device id
+const char *apikey =    "400a0816d";             //platform device api key
 const char *usrkey =    "";             //platform user key , if you are not using encrypted login,you can leave it blank
-const char *picId =     "";             //photo data stream id
+const char *picId =     "14814";             //photo data stream id
 
 void setup()
 {
