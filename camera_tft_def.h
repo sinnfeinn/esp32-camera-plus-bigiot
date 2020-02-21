@@ -16,8 +16,8 @@
 // Only define one driver, the other ones must be commented out
 // #define ILI9341_DRIVER
 // #define ST7735_DRIVER
-// #define ILI9163_DRIVER
-// #define S6D02A1_DRIVER
+//#define ILI9163_DRIVER
+//#define S6D02A1_DRIVER
 #define ST7789_DRIVER
 //#define RPI_ILI9486_DRIVER // 20MHz maximum SPI
 
@@ -25,8 +25,8 @@
 //#define M5STACK
 
 // For ST7735  and ILI9163 ONLY, define the pixel width and height in portrait orientation
-//#define TFT_WIDTH  240
-//#define TFT_HEIGHT 240
+#define TFT_WIDTH  240
+#define TFT_HEIGHT 240
 //#define TFT_HEIGHT 128
 
 // For ST7735 ONLY, define the type of display, originally this was based on the
@@ -36,13 +36,13 @@
 // Comment out ALL BUT ONE of these options for a ST7735 display driver, save this
 // this User_Setup file, then rebuild and upload the sketch to the board again:
 
-// #define ST7735_INITB
-// #define ST7735_GREENTAB
+//#define ST7735_INITB
+//#define ST7735_GREENTAB
 // #define ST7735_GREENTAB2
 // #define ST7735_GREENTAB3
 // #define ST7735_GREENTAB128 // For 128 x 128 display
 // #define ST7735_REDTAB
-// #define ST7735_BLACKTAB
+//#define ST7735_BLACKTAB
 
 // ##################################################################################
 //
@@ -112,12 +112,12 @@
 // For ESP32 Dev board (only tested with ILI9341 display)
 // The hardware SPI can be mapped to any pins
 
-#define TFT_MISO 22
+#define TFT_MISO -1
 #define TFT_MOSI 19
 #define TFT_SCLK 21
 #define TFT_CS 12 // Chip select control pin
 #define TFT_DC 15 // Data Command control pin
-#define TFT_RST 2 // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
+#define TFT_RST -1 // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
 
 //#define TOUCH_CS 21     // Chip select pin (T_CS) of touch screen
 
